@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_application_1",
+            "name": "pos_dev_web--disp_moveis--ativ_flutter_widgets1",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "flutter_application_1 (profile mode)",
+            "name": "pos_dev_web--disp_moveis--ativ_flutter_widgets1 (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_application_1 (release mode)",
+            "name": "pos_dev_web--disp_moveis--ativ_flutter_widgets1 (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

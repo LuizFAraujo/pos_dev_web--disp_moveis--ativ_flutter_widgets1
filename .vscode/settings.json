@@ -1,0 +1,116 @@
+{
+  // "editor.formatOnPaste": false,
+  // "editor.formatOnSave": false,
+  // "editor.formatOnType": false,
+  // "prettier-eslint.eslintIntegration": true,
+
+  // "javascript.preferences.importModuleSpecifier": "non-relative",
+
+  // ============
+  // OCULTAR ARQUIVOS E PASTAS NO EXPLORER
+  // ============
+
+  // ============
+  // GERAL
+  // ============
+  "files.exclude": {
+    "*__*": true,
+    "*.html": true,
+
+    ".vscode": true,
+    ".next": true,
+
+    "summernote": true,
+    "public": true,
+    "node_modules": true,
+
+    "app/api": true,
+
+    "*.md": true,
+
+    "*.env*": true,
+
+    "src/*-env.d*": true,
+
+    "*config*.js*": true,
+    "*config*.ts*": true,
+
+    ".git*": true,
+    ".prettier*": true,
+    ".eslint*": true,
+
+    ".npm*": true,
+    ".nvm*": true,
+
+    ".replit*": true,
+
+    "package*": true,
+    "yarn*": true,
+
+    "*.bat*": true,
+    "*.BAT*": true,
+
+    "LICENSE": true,
+
+    ".markdownlint.json": true,
+
+    // ============
+    // FLUTTER / DART
+    // ============
+    ".dart_tool": true,
+    ".idea": true,
+    "*.iml": true,
+    "*.log": true,
+    ".metadata": true,
+    "*.yaml": true,
+    "pubspec.lock": true,
+    "test": true,
+    "build": true,
+    "ios": true,
+    "linux": true,
+    "macos": true
+
+    // ============
+    // arquivos abaixo são opcionais para esconder
+    // ============
+
+    // "@types": true,
+    // "*.config.*": true,
+    // "*.ht*": true,
+    // "*.json": true,
+    // "*.md": true,
+
+    // "*.env.example": true,
+    // ".prettierrc": true,
+    // ".editorconfig": true,
+    // "service.bat": true,
+    // "next-env.d.ts": true,
+    // "next.config.js": true,
+    // "src/react-app-env*": true,
+    // "src/_bkp": true,
+    // "src/__*": true,
+    // "src/*Test*": true,
+    // "src/*test*": true,
+    // "*.txt*": true,
+    // "yarn.lock": true,
+    // "*.bat*": true,
+    // "*.BAT*": true
+  },
+
+  //   "git.ignoreLimitWarning": true
+
+  // ============
+  // FLUTTER / DART - HOT RELOAD E FORMATAÇÃO
+
+  // Formata o código ao salvar
+  "editor.formatOnSave": true,
+
+  // Organiza os imports automaticamente ao salvar
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  }
+}
+
+//    https://qastack.com.br/programming/30140112/how-do-i-hide-certain-files-from-the-sidebar-in-visual-studio-code
+
+//    https://rodrigoreisf.com.br/esconder-pastas-na-sidebar-do-vscode/#:~:text=Abra%20o%20Visual%20Studio%20Code,%7D%2C%20caso%20ainda%20n%C3%A3o%20exista

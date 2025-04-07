@@ -24,11 +24,14 @@ Para criar e executar o projeto Flutter:
 
 1. Certifique-se de ter o Flutter instalado corretamente (verificado com `flutter doctor`).
 2. No terminal, crie o projeto com:
+
    ```sh
    flutter create ativ_flutter_widgets1
    ```
+
 3. Substitua o conteúdo de `lib/main.dart` com o código da atividade.
 4. Execute com:
+
    ```sh
    flutter run
    ```
