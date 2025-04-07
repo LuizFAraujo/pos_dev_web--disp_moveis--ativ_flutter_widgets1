@@ -16,27 +16,45 @@ Implementar dois widgets utilizando o framework **Flutter**, demonstrando a estr
 
 > Esta atividade tem como objetivo aplicar os conceitos iniciais de interface gráfica com Flutter, compondo uma tela simples e funcional com dois widgets distintos.
 
+Além disso, a aplicação foi expandida com funcionalidades extras, como múltiplas telas (`home_page`, `onboarding_page`), controle de tema claro/escuro (`theme_controller.dart`), utilização de imagem (`avatar.png`), widgets personalizados como `ResumoWidget` e um `StepperCustom`, oferecendo uma experiência mais rica e interativa ao usuário.
+
 ---
 
 ## 🖥️ Execução
 
-Para criar e executar o projeto Flutter:
+Para rodar o projeto Flutter localmente:
 
-1. Certifique-se de ter o Flutter instalado corretamente (verificado com `flutter doctor`).
-2. No terminal, crie o projeto com:
+1. Certifique-se de ter o Flutter instalado corretamente (verifique com o comando):
 
    ```sh
-   flutter create ativ_flutter_widgets1
+   flutter doctor
    ```
 
-3. Substitua o conteúdo de `lib/main.dart` com o código da atividade.
-4. Execute com:
+2. Clone ou baixe este repositório em sua máquina:
+
+   ```sh
+   git clone https://github.com/LuizFAraujo/pos_dev_web--disp_moveis--ativ_flutter_widgets1.git
+   ```
+
+3. Navegue até o diretório do projeto:
+
+   ```sh
+   cd pos_dev_web--disp_moveis--ativ_flutter_widgets1
+   ```
+
+4. Instale as dependências:
+
+   ```sh
+   flutter pub get
+   ```
+
+5. Execute a aplicação:
 
    ```sh
    flutter run
    ```
 
-> Também é possível rodar no emulador ou navegador se o ambiente estiver configurado.
+> A aplicação pode ser executada em um emulador, dispositivo físico ou navegador (se estiver utilizando Flutter Web).
 
 ---
 
