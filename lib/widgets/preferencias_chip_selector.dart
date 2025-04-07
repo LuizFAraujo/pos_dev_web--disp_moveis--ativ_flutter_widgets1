@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class PreferenciasChipSelector extends StatefulWidget {
-  final List<String> selecionadas;
-  final Function(List<String>) aoAlterar;
+  final List<String> selecionados;
+  final Function(List<String>) onSelecionadosMudaram;
 
   const PreferenciasChipSelector({
     super.key,
-    required this.selecionadas,
-    required this.aoAlterar,
+    required this.selecionados,
+    required this.onSelecionadosMudaram,
   });
 
   @override
@@ -29,24 +29,24 @@ class _PreferenciasChipSelectorState extends State<PreferenciasChipSelector> {
   Widget build(BuildContext context) {
     return Wrap(
       spacing: 8,
-      children: _opcoes.map((opcao) {
-        final bool selecionado = widget.selecionadas.contains(opcao);
-
-        return ChoiceChip(
-          label: Text(opcao),
-          selected: selecionado,
-          onSelected: (bool marcado) {
-            setState(() {
-              if (marcado) {
-                widget.selecionadas.add(opcao);
-              } else {
-                widget.selecionadas.remove(opcao);
-              }
-              widget.aoAlterar(widget.selecionadas);
-            });
-          },
-        );
-      }).toList(),
+      children:
+          _opcoes.map((opcao) {
+            final selecionado = widget.selecionados.contains(opcao);
+            return ChoiceChip(
+              label: Text(opcao),
+              selected: selecionado,
+              onSelected: (bool value) {
+                setState(() {
+                  if (value) {
+                    widget.selecionados.add(opcao);
+                  } else {
+                    widget.selecionados.remove(opcao);
+                  }
+                  widget.onSelecionadosMudaram(widget.selecionados);
+                });
+              },
+            );
+          }).toList(),
     );
   }
 }
